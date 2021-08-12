@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://yosephbuitrago.github.io
+  url: https://yosephbuitrago.github.io/helm
