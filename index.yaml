@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  podinfo:
+  - apiVersion: v2
+    appVersion: 4.0.10
+    created: "2020-04-27T17:46:52.60919-05:00"
+    description: A Helm chart for Kubernetes
+    digest: cd1f8d949aeb6a7a3c6720bfe71688d4add794881b78ad9715017581f7867db4
+    name: podinfo
+    type: application
+    urls:
+    - charts/podinfo
+    version: 4.0.10
+generated: "2020-04-27T17:46:52.607943-05:00"
