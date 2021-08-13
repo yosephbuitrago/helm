@@ -26,16 +26,15 @@ spec:
     name: flux-system
   validation: client
 ---
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
-kind: Kustomization
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
 metadata:
-  name: prd
+  name: helm-charts
   namespace: flux-system
 spec:
-  interval: 1m0s
-  path: ./env/production
-  prune: true
-  sourceRef:
-    kind: GitRepository
+  interval: 1m
+  url: https://github.com/RapidRatings/helm-charts
+  ref:
+    branch: develop
+  secretRef:
     name: flux-system
-  validation: client

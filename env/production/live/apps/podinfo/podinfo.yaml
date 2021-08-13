@@ -7,12 +7,12 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: podinfo
-      version: '4.0.10'
+      chart: ./charts/podinfo
+      version: '6.0.0'
       sourceRef:
-        kind: HelmRepository
-        name: yoseph-repo
+        kind: GitRepository
+        name: helm-charts
         namespace: flux-system
       interval: 1m
   values:
-    replicaCount: 2
+    replicaCount: 1
