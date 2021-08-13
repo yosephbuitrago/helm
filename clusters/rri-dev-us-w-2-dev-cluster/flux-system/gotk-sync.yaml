@@ -33,7 +33,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/RapidRatings/helm-charts
+  url: ssh://git@github.com:RapidRatings/helm-charts
   ref:
     branch: develop
   secretRef:
