@@ -25,7 +25,5 @@ spec:
     ui:
       color: "#d12426"
     image:
-      repository: 231176818014.dkr.ecr.us-west-2.amazonaws.com/podinfo
-      tag: 6.0.0
-      # repository: test.rollback/test
-      # tag: 6.0.0
+      repository: 231176818014.dkr.ecr.us-west-2.amazonaws.com/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
+      tag: 6.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
