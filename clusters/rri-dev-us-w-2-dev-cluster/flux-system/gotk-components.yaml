@@ -4906,6 +4906,8 @@ metadata:
     app.kubernetes.io/version: v0.16.2
   name: image-reflector-controller
   namespace: flux-system
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::231176818014:role/yoseph-test-image-reflector-controller
 ---
 apiVersion: v1
 kind: ServiceAccount
