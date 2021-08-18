@@ -1,21 +1,21 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImageRepository
-metadata:
-  name: podinfo
-  namespace: flux-system
-spec:
-  image: 231176818014.dkr.ecr.us-west-2.amazonaws.com/podinfo
-  interval: 1m0s
----
-apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImagePolicy
-metadata:
-  name: podinfo
-  namespace: flux-system
-spec:
-  filterTags:
-    pattern: '^develop-[a-fA-F0-9]+-(?P<ts>[1-9][0-9]*)'
-    extract: '$ts'
-  policy:
-     numerical:
-      order: asc
+# apiVersion: image.toolkit.fluxcd.io/v1beta1
+# kind: ImageRepository
+# metadata:
+#   name: podinfo
+#   namespace: flux-system
+# spec:
+#   image: 231176818014.dkr.ecr.us-west-2.amazonaws.com/podinfo
+#   interval: 1m0s
+# ---
+# apiVersion: image.toolkit.fluxcd.io/v1beta1
+# kind: ImagePolicy
+# metadata:
+#   name: podinfo
+#   namespace: flux-system
+# spec:
+#   filterTags:
+#     pattern: '^develop-[a-fA-F0-9]+-(?P<ts>[1-9][0-9]*)'
+#     extract: '$ts'
+#   policy:
+#      numerical:
+#       order: asc
