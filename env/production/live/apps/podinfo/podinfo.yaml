@@ -26,4 +26,4 @@ spec:
       color: "#d12426"
     image:
       repository: 231176818014.dkr.ecr.us-west-2.amazonaws.com/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-      tag: develop-7afc8f0-1629303741 # {"$imagepolicy": "flux-system:podinfo:tag"}
+      tag: develop-683c7b4-1629385058 # {"$imagepolicy": "flux-system:podinfo:tag"}
