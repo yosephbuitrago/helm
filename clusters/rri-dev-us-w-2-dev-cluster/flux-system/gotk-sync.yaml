@@ -20,7 +20,7 @@ spec:
 # spec:
 #   interval: 1m0s
 #   path: ./clusters/rri-dev-us-w-2-dev-cluster
-#   prune: true
+#   prune: false
 #   sourceRef:
 #     kind: GitRepository
 #     name: flux-system

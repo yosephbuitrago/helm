@@ -1,15 +1,15 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
-metadata:
-  name: helm-charts
-  namespace: flux-system
-spec:
-  interval: 1m
-  ref:
-    branch: develop
-  secretRef:
-    name: helm-charts
-  url: ssh://git@github.com/RapidRatings/helm-charts.git
+# apiVersion: source.toolkit.fluxcd.io/v1beta1
+# kind: GitRepository
+# metadata:
+#   name: helm-charts
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   ref:
+#     branch: develop
+#   secretRef:
+#     name: helm-charts
+#   url: ssh://git@github.com/RapidRatings/helm-charts.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
